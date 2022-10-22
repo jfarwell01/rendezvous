@@ -9,14 +9,15 @@ def add_var(x):
     model.new
 
 
-def optimize(nodes: pd.DataFrame, edges: pd.DataFrame):
+def optimize(
+    nodes: pd.DataFrame, edges: pd.DataFrame, start_nodes: set, end_nodes: set
+):
     """
     Args:
         nodes: Dataframe of nodes and attributes
         edges: Dataframe of edges, 'source' and 'destination'
 
     """
-    ending_nodes = [5, 6]  # TODO: do not hardcode
     # Create Edge Variables
     edge_vars = {}
     for source, destination in zip(edges["source"], edges["destination"]):
@@ -25,7 +26,7 @@ def optimize(nodes: pd.DataFrame, edges: pd.DataFrame):
         )
 
     # C1: Continuity Constraint
-    for i in range(1, 5):
+    for i in set(nodes["id"]) - start_nodes - end_nodes:
         model.Add(
             cp_model.LinearExpr.Sum(
                 [edge for key, edge in edge_vars.items() if key[0] == i]
@@ -37,14 +38,14 @@ def optimize(nodes: pd.DataFrame, edges: pd.DataFrame):
     # C2: Starting Constraint
     model.Add(
         cp_model.LinearExpr.Sum(
-            [edge for key, edge in edge_vars.items() if key[0] == 0]
+            [edge for key, edge in edge_vars.items() if key[0] in start_nodes]
         )
         == 1
     )
     # C3: Ending Constraint
     model.Add(
         cp_model.LinearExpr.Sum(
-            [edge for key, edge in edge_vars.items() if key[1] in ending_nodes]
+            [edge for key, edge in edge_vars.items() if key[1] in end_nodes]
         )
         == 1
     )

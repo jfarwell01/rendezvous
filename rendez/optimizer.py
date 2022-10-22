@@ -5,10 +5,6 @@ from ortools.sat.python import cp_model
 model = cp_model.CpModel()
 
 
-def add_var(x):
-    model.new
-
-
 def optimize(
     nodes: pd.DataFrame, edges: pd.DataFrame, start_nodes: set, end_nodes: set
 ):
@@ -20,10 +16,20 @@ def optimize(
     """
     # Create Edge Variables
     edge_vars = {}
-    for source, destination in zip(edges["source"], edges["destination"]):
-        edge_vars[source, destination] = model.NewBoolVar(
-            str(source) + "_" + str(destination)
-        )
+    dist_consts = {}
+    dist_vars = {}
+    for source, dest, dist in zip(
+        edges["source"], edges["destination"], edges["distance"]
+    ):
+        name = str(source) + "_" + str(dest)
+        edge_var = model.NewBoolVar(name)
+        dist_const = model.NewConstant(dist)
+        dist_var = model.NewIntVar(0, 10000, name + "_dist")
+        edge_vars[source, dest] = edge_var
+        dist_consts[source, dest] = dist_const
+        dist_vars[source, dest] = dist_var
+        # Makes sure that the dist_var is calculating the distance traveled
+        model.AddMultiplicationEquality(dist_var, [edge_var, dist_const])
 
     # C1: Continuity Constraint
     for i in set(nodes["id"]) - start_nodes - end_nodes:
@@ -49,7 +55,9 @@ def optimize(
         )
         == 1
     )
-
+    # Objective
+    dist_traveled = sum(dist_vars.values())
+    model.Minimize(dist_traveled)
     # Solve
     solver = cp_model.CpSolver()
     status = solver.Solve(model)

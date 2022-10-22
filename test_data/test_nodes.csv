@@ -1,7 +1,8 @@
 id,type,rating
-0,restaurant,4
-1,restaurant,3
-2,theater,5
-3,theater,4.5
-4,bar,2
-5,bar,4.2
+0,start,
+1,restaurant,4
+2,restaurant,3
+3,theater,5
+4,theater,4.5
+5,bar,2
+6,bar,4.2

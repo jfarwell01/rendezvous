@@ -63,10 +63,18 @@ def optimize(
     status = solver.Solve(model)
     if status in [cp_model.OPTIMAL, cp_model.FEASIBLE]:
         print("Model sucessful")
-        return get_selected_edges(solver, edge_vars)
+        return get_soln_dict(solver, edge_vars)
     else:
         print(f"Model failed with error code {status}")
         return None
+
+
+def get_soln_dict(solver, edge_vars):
+    return {
+        "objective": solver.ObjectiveValue(),
+        "edges": get_selected_edges(solver, edge_vars),
+        "time": solver.WallTime(),
+    }
 
 
 def get_selected_edges(solver: cp_model.CpSolver, edge_vars: dict):

@@ -1,5 +1,6 @@
 import pandas as pd
 import rendez.optimizer
+import json
 
 
 def test_small():
@@ -8,11 +9,11 @@ def test_small():
     start_nodes = {0}
     end_nodes = {5, 6}
     soln = rendez.optimizer.optimize(nodes, edges, start_nodes, end_nodes)
-    assert_solution_valid(edges, soln, start_nodes, end_nodes)
+    print(json.dumps(soln, sort_keys=True, indent=4))
+    assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)
 
 
 def assert_solution_valid(edges, soln, start_nodes, end_nodes):
-    print("Proposed Solution:\n", soln)
     sources = set([s[0] for s in soln])
     dests = set([s[1] for s in soln])
     # C1: Continuity Constraint

@@ -2,7 +2,7 @@ import pandas as pd
 import rendez.optimizer
 
 
-def simple_test():
+def test_small():
     edges = pd.read_csv("test_data/test_edges.csv")
     nodes = pd.read_csv("test_data/test_nodes.csv")
     soln = rendez.optimizer.optimize(nodes, edges)
@@ -25,4 +25,4 @@ def assert_solution_valid(edges, soln):
 
 
 if __name__ == "__main__":
-    simple_test()
+    test_small()

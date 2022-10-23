@@ -9,7 +9,12 @@ def test_small():
     start_nodes = {0}
     end_nodes = {5, 6}
     soln = rendez.optimizer.optimize(
-        nodes, edges, start_nodes, end_nodes, edge_objectives={"distance"}
+        nodes,
+        edges,
+        start_nodes,
+        end_nodes,
+        edge_objectives={"distance"},
+        node_objectives={"rating_diff"},
     )
     print(json.dumps(soln, sort_keys=True, indent=4))
     assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)

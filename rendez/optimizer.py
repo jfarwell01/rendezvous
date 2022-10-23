@@ -33,14 +33,31 @@ def optimize(
 
     """
     edge_vars = {}
-    obj_consts = defaultdict(dict)
-    obj_vars = defaultdict(dict)
+    node_vars = {}
+    edge_obj_consts = defaultdict(dict)
+    edge_obj_vars = defaultdict(dict)
+    node_obj_consts = defaultdict(dict)
+    node_obj_vars = defaultdict(dict)
+
     # Populate Boolean Edge Variables
     edges.apply(add_edge_vars, args=(model, edge_vars), axis=1)
     # Populate Objective Variables and Constants
     edges.apply(
-        add_objective_vars,
-        args=(model, edge_vars, edge_objectives, obj_consts, obj_vars),
+        add_edge_objective_vars,
+        args=(model, edge_vars, edge_objectives, edge_obj_consts, edge_obj_vars),
+        axis=1,
+    )
+
+    nodes[nodes["type"] != "start"].apply(
+        add_node_objective_vars,
+        args=(
+            model,
+            edge_vars,
+            node_vars,
+            node_objectives,
+            node_obj_consts,
+            node_obj_vars,
+        ),
         axis=1,
     )
 
@@ -69,8 +86,9 @@ def optimize(
         == 1
     )
     # Objective
-    loss = sum([sum(obj_vars[key].values()) for key in obj_vars])
-    model.Minimize(loss)
+    edge_loss = sum([sum(var.values()) for var in edge_obj_vars.values()])
+    node_loss = sum([sum(var.values()) for var in node_obj_vars.values()])
+    model.Minimize(edge_loss + node_loss)
     # Solve
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
@@ -82,14 +100,45 @@ def optimize(
         return None
 
 
+def add_node_objective_vars(
+    row,
+    model,
+    edge_vars: dict,
+    node_vars: dict,
+    node_objectives: set,
+    node_obj_consts: dict,
+    node_obj_vars: dict,
+):
+    node_var = model.NewBoolVar(f"{row['id']}_selected")
+    node_vars[row["id"]] = node_var
+    model.AddBoolOr(
+        [var for key, var in edge_vars.items() if row["id"] in key]
+    ).OnlyEnforceIf(node_var)
+    model.AddBoolAnd(
+        [var.Not() for key, var in edge_vars.items() if row["id"] in key]
+    ).OnlyEnforceIf(node_var.Not())
+    for node_obj in node_objectives:
+        name = f"{row['id']}_{node_obj}"
+        new_constant = model.NewConstant(row[node_obj])
+        node_obj_consts[node_obj][row["id"]] = new_constant
+        new_var = model.NewIntVar(-10000, 10000, name)
+        node_obj_vars[node_obj][row["id"]] = new_var
+        model.AddMultiplicationEquality(new_var, [node_var, new_constant])
+
+
 def add_edge_vars(row, model, edge_vars):
     name = str(row["source"]) + "_" + str(row["destination"])
     edge_var = model.NewBoolVar(name)
     edge_vars[row["source"], row["destination"]] = edge_var
 
 
-def add_objective_vars(
-    row, model, edge_vars, edge_objectives: set, obj_consts: dict, obj_vars: dict
+def add_edge_objective_vars(
+    row,
+    model,
+    edge_vars: dict,
+    edge_objectives: set,
+    edge_obj_consts: dict,
+    edge_obj_vars: dict,
 ):
     """
     Creates a dictionary of objective_vars that contain the objective constants when the corresponding
@@ -98,9 +147,9 @@ def add_objective_vars(
     for edge_obj in edge_objectives:
         name = str(row["source"]) + "_" + str(row["destination"]) + "_" + edge_obj
         new_constant = model.NewConstant(row[edge_obj])
-        obj_consts[edge_obj][row["source"], row["destination"]] = new_constant
+        edge_obj_consts[edge_obj][row["source"], row["destination"]] = new_constant
         new_var = model.NewIntVar(-10000, 10000, name)
-        obj_vars[edge_obj][row["source"], row["destination"]] = new_var
+        edge_obj_vars[edge_obj][row["source"], row["destination"]] = new_var
         model.AddMultiplicationEquality(
             new_var, [edge_vars[row["source"], row["destination"]], new_constant]
         )

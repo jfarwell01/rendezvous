@@ -1,5 +1,5 @@
 import pandas as pd
-import rendez.optimizer
+from rendez import cpsat_optimizer
 import json
 
 
@@ -8,7 +8,7 @@ def test_small():
     nodes = pd.read_csv("test_data/test_nodes.csv")
     start_nodes = {0}
     end_nodes = {5, 6}
-    soln = rendez.optimizer.optimize(
+    soln = cpsat_optimizer.optimize(
         nodes,
         edges,
         start_nodes,

@@ -1,9 +1,10 @@
-import numpy as np
+"""
+Optimizer uses OR-Tools CP-SAT solver for constraint programming
+"""
+
 import pandas as pd
 from ortools.sat.python import cp_model
 from collections import defaultdict
-
-
 
 
 def optimize(
@@ -96,6 +97,7 @@ def optimize(
         print(f"Model failed with error code {status}")
         return None
 
+
 def add_edge_vars(row, model, edge_vars):
     """
     populates an edge_vars dict with the or-tools variables
@@ -103,6 +105,7 @@ def add_edge_vars(row, model, edge_vars):
     name = str(row["source"]) + "_" + str(row["destination"])
     edge_var = model.NewBoolVar(name)
     edge_vars[row["source"], row["destination"]] = edge_var
+
 
 def add_node_objective_vars(
     row,
@@ -133,8 +136,6 @@ def add_node_objective_vars(
         new_var = model.NewIntVar(-10000, 10000, name)
         node_obj_vars[node_obj][row["id"]] = new_var
         model.AddMultiplicationEquality(new_var, [node_var, new_constant])
-
-
 
 
 def add_edge_objective_vars(

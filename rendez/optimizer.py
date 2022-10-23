@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 from ortools.sat.python import cp_model
+from collections import defaultdict
+
 
 model = cp_model.CpModel()
 
@@ -30,11 +32,17 @@ def optimize(
         }
 
     """
-    # Create Edge Variables
     edge_vars = {}
-    dist_consts = {}
-    dist_vars = {}
-    edges.apply(add_constraint, args=(model, edge_vars, dist_consts, dist_vars), axis=1)
+    obj_consts = defaultdict(dict)
+    obj_vars = defaultdict(dict)
+    # Populate Boolean Edge Variables
+    edges.apply(add_edge_vars, args=(model, edge_vars), axis=1)
+    # Populate Objective Variables and Constants
+    edges.apply(
+        add_objective_vars,
+        args=(model, edge_vars, edge_objectives, obj_consts, obj_vars),
+        axis=1,
+    )
 
     # C1: Continuity Constraint
     for i in set(nodes["id"]) - start_nodes - end_nodes:
@@ -61,8 +69,8 @@ def optimize(
         == 1
     )
     # Objective
-    dist_traveled = sum(dist_vars.values())
-    model.Minimize(dist_traveled)
+    loss = sum([sum(obj_vars[key].values()) for key in obj_vars])
+    model.Minimize(loss)
     # Solve
     solver = cp_model.CpSolver()
     status = solver.Solve(model)
@@ -74,16 +82,28 @@ def optimize(
         return None
 
 
-def add_constraint(row, model, edge_vars, dist_consts, dist_vars):
+def add_edge_vars(row, model, edge_vars):
     name = str(row["source"]) + "_" + str(row["destination"])
     edge_var = model.NewBoolVar(name)
-    dist_const = model.NewConstant(row["distance"])
     edge_vars[row["source"], row["destination"]] = edge_var
-    dist_consts[row["source"], row["destination"]] = dist_const
-    dist_var = model.NewIntVar(0, 10000, name + "_dist")
-    dist_vars[row["source"], row["destination"]] = dist_var
-    # Makes sure that the dist_var is calculating the distance traveled
-    model.AddMultiplicationEquality(dist_var, [edge_var, dist_const])
+
+
+def add_objective_vars(
+    row, model, edge_vars, edge_objectives: set, obj_consts: dict, obj_vars: dict
+):
+    """
+    Creates a dictionary of objective_vars that contain the objective constants when the corresponding
+    edge is selected and contain 0 when the edge is not selected
+    """
+    for edge_obj in edge_objectives:
+        name = str(row["source"]) + "_" + str(row["destination"]) + "_" + edge_obj
+        new_constant = model.NewConstant(row[edge_obj])
+        obj_consts[edge_obj][row["source"], row["destination"]] = new_constant
+        new_var = model.NewIntVar(-10000, 10000, name)
+        obj_vars[edge_obj][row["source"], row["destination"]] = new_var
+        model.AddMultiplicationEquality(
+            new_var, [edge_vars[row["source"], row["destination"]], new_constant]
+        )
 
 
 def get_soln_dict(solver, edge_vars):

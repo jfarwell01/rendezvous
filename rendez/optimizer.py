@@ -34,18 +34,7 @@ def optimize(
     edge_vars = {}
     dist_consts = {}
     dist_vars = {}
-    for source, dest, dist in zip(
-        edges["source"], edges["destination"], edges["distance"]
-    ):
-        name = str(source) + "_" + str(dest)
-        edge_var = model.NewBoolVar(name)
-        dist_const = model.NewConstant(dist)
-        edge_vars[source, dest] = edge_var
-        dist_consts[source, dest] = dist_const
-        dist_var = model.NewIntVar(0, 10000, name + "_dist")
-        dist_vars[source, dest] = dist_var
-        # Makes sure that the dist_var is calculating the distance traveled
-        model.AddMultiplicationEquality(dist_var, [edge_var, dist_const])
+    edges.apply(add_constraint, args=(model, edge_vars, dist_consts, dist_vars), axis=1)
 
     # C1: Continuity Constraint
     for i in set(nodes["id"]) - start_nodes - end_nodes:
@@ -85,6 +74,18 @@ def optimize(
         return None
 
 
+def add_constraint(row, model, edge_vars, dist_consts, dist_vars):
+    name = str(row["source"]) + "_" + str(row["destination"])
+    edge_var = model.NewBoolVar(name)
+    dist_const = model.NewConstant(row["distance"])
+    edge_vars[row["source"], row["destination"]] = edge_var
+    dist_consts[row["source"], row["destination"]] = dist_const
+    dist_var = model.NewIntVar(0, 10000, name + "_dist")
+    dist_vars[row["source"], row["destination"]] = dist_var
+    # Makes sure that the dist_var is calculating the distance traveled
+    model.AddMultiplicationEquality(dist_var, [edge_var, dist_const])
+
+
 def get_soln_dict(solver, edge_vars):
     return {
         "objective": solver.ObjectiveValue(),
@@ -97,4 +98,8 @@ def get_selected_edges(solver: cp_model.CpSolver, edge_vars: dict):
     """
     Extracts a solution from the solver and its variables
     """
-    return [key for key, val in edge_vars.items() if solver.Value(val)]
+    return [
+        (int(key[0]), int(key[1]))
+        for key, val in edge_vars.items()
+        if solver.Value(val)
+    ]

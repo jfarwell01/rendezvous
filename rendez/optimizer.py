@@ -4,7 +4,6 @@ from ortools.sat.python import cp_model
 from collections import defaultdict
 
 
-model = cp_model.CpModel()
 
 
 def optimize(
@@ -32,6 +31,7 @@ def optimize(
         }
 
     """
+    model = cp_model.CpModel()
     edge_vars = {}
     node_vars = {}
     edge_obj_vars = defaultdict(dict)

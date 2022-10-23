@@ -96,6 +96,13 @@ def optimize(
         print(f"Model failed with error code {status}")
         return None
 
+def add_edge_vars(row, model, edge_vars):
+    """
+    populates an edge_vars dict with the or-tools variables
+    """
+    name = str(row["source"]) + "_" + str(row["destination"])
+    edge_var = model.NewBoolVar(name)
+    edge_vars[row["source"], row["destination"]] = edge_var
 
 def add_node_objective_vars(
     row,
@@ -105,6 +112,13 @@ def add_node_objective_vars(
     node_objectives: set,
     node_obj_vars: dict,
 ):
+    """
+    Populates node_obj_vars dict with or-tools objective variables
+
+    Args:
+        node_objectives: List of column names from row
+        node_obj_vars: dict of objective vars, 0 if node not visited (objective) if visited
+    """
     node_var = model.NewBoolVar(f"{row['id']}_selected")
     node_vars[row["id"]] = node_var
     model.AddBoolOr(
@@ -121,10 +135,6 @@ def add_node_objective_vars(
         model.AddMultiplicationEquality(new_var, [node_var, new_constant])
 
 
-def add_edge_vars(row, model, edge_vars):
-    name = str(row["source"]) + "_" + str(row["destination"])
-    edge_var = model.NewBoolVar(name)
-    edge_vars[row["source"], row["destination"]] = edge_var
 
 
 def add_edge_objective_vars(
@@ -149,6 +159,9 @@ def add_edge_objective_vars(
 
 
 def get_soln_dict(solver, edge_vars):
+    """
+    returns a result dictionary after solution
+    """
     return {
         "objective": solver.ObjectiveValue(),
         "edges": get_selected_edges(solver, edge_vars),

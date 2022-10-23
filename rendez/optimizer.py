@@ -6,12 +6,28 @@ model = cp_model.CpModel()
 
 
 def optimize(
-    nodes: pd.DataFrame, edges: pd.DataFrame, start_nodes: set, end_nodes: set
-):
+    nodes: pd.DataFrame,
+    edges: pd.DataFrame,
+    start_nodes: set,
+    end_nodes: set,
+    edge_objectives: set = set(),
+    node_objectives: set = set(),
+) -> dict:
     """
     Args:
         nodes: Dataframe of nodes and attributes
         edges: Dataframe of edges, 'source' and 'destination'
+        starting_nodes: set of eligble starting nodes
+        ending_nodes: set of eligible ending nodes
+        edge_objectives: set of column names from nodes to minimize when selected
+        node_objectives: set of column names from edges to minimize when selected
+    Return:
+        solution dict
+        {
+            "objective" : solution cost
+            "edges" : edges selected
+            "time" : wall clock time to solution
+        }
 
     """
     # Create Edge Variables
@@ -24,9 +40,9 @@ def optimize(
         name = str(source) + "_" + str(dest)
         edge_var = model.NewBoolVar(name)
         dist_const = model.NewConstant(dist)
-        dist_var = model.NewIntVar(0, 10000, name + "_dist")
         edge_vars[source, dest] = edge_var
         dist_consts[source, dest] = dist_const
+        dist_var = model.NewIntVar(0, 10000, name + "_dist")
         dist_vars[source, dest] = dist_var
         # Makes sure that the dist_var is calculating the distance traveled
         model.AddMultiplicationEquality(dist_var, [edge_var, dist_const])

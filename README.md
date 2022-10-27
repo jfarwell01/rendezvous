@@ -10,3 +10,21 @@ DVA Project
     - `pip install -r requirements.txt`
 - Install local rendez package
     - `pip install -e .`
+
+## Optimizer
+Passing data into the optimizer
+
+### Graph
+- nodes - businesses + single node for user's current location 
+
+- edges - eligible travel links from one business to the next  
+    - weight - distance, haversine (or time if you're ambitious)
+
+Further detail can be found [here](https://gtvault.sharepoint.com/:w:/r/sites/DVAProject188/_layouts/15/Doc.aspx?action=edit&sourcedoc=%7B75f210af-3a92-469f-a8e6-f7c313652ad9%7D&wdOrigin=TEAMS-ELECTRON.teamsSdk.openFilePreview&wdExp=TEAMS-CONTROL&web=1)
+
+### Usage
+See the example code in `scripts/test_optimizer.py` for using the optimizer.
+
+Create dataframes that resember the csv files present in `test_data/test_edges.csv` and `test_data/test_nodes.csv`.
+
+Pass those dataframes and your desired parameters into the optimizer.

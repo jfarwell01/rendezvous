@@ -84,6 +84,7 @@ def optimize(
         == 1
     )
     # Objective
+    # TODO: Incorporate weighting
     edge_loss = sum([sum(var.values()) for var in edge_obj_vars.values()])
     node_loss = sum([sum(var.values()) for var in node_obj_vars.values()])
     model.Minimize(edge_loss + node_loss)

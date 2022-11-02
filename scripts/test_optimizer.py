@@ -22,8 +22,9 @@ def test_small():
 
 
 def test_big():
-    # rebuild the small graph
-    # 3 types at 2 businesses each
+    """
+    Tests the solution on a larger graph to measure performance
+    """
     ntypes = 3
     nbusinesses = 100
     edges, nodes = random_graph(
@@ -57,7 +58,10 @@ def get_dest_list(ntypes, nbusinesses):
 
 
 def random_graph(ntypes, nbusinesses, edge_objectives=set, node_objectives=set):
-    """ """
+    """
+    creates a random graph of the same structure as the test data
+    however the number of types and number of businesses at each type are variable
+    """
     nodes = pd.DataFrame()
     nnodes = ntypes * nbusinesses + 1
     nodes["id"] = range(nnodes)

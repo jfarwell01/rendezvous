@@ -18,14 +18,14 @@ def test_small():
         node_objectives={"rating_diff"},
     )
     print(json.dumps(soln, sort_keys=True, indent=4))
-    assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)
+    assert_solution_valid(nodes, edges, soln["edges"], start_nodes, end_nodes)
 
 
 def test_big():
     # rebuild the small graph
     # 3 types at 2 businesses each
     ntypes = 3
-    nbusinesses = 2
+    nbusinesses = 100
     edges, nodes = random_graph(
         ntypes=ntypes,
         nbusinesses=nbusinesses,
@@ -43,7 +43,7 @@ def test_big():
         node_objectives={"rating_diff"},
     )
     print(json.dumps(soln, sort_keys=True, indent=4))
-    assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)
+    assert_solution_valid(nodes, edges, soln["edges"], start_nodes, end_nodes)
 
 
 def get_dest_list(ntypes, nbusinesses):
@@ -77,11 +77,11 @@ def random_graph(ntypes, nbusinesses, edge_objectives=set, node_objectives=set):
     return edges, nodes
 
 
-def assert_solution_valid(edges, soln, start_nodes, end_nodes):
+def assert_solution_valid(nodes, edges, soln, start_nodes, end_nodes):
     sources = set([s[0] for s in soln])
     dests = set([s[1] for s in soln])
     # C1: Continuity Constraint
-    assert len(soln) == 3, "Solution length incorrect"
+    assert len(soln) == len(nodes["type"].unique()) - 1, "Solution length incorrect"
     # C2: Starting Constraint
     assert (
         len(start_nodes.intersection(sources - dests)) == 1

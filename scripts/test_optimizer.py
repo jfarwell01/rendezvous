@@ -1,6 +1,7 @@
 import pandas as pd
 from rendez import cpsat_optimizer
 import json
+import random
 
 
 def test_small():
@@ -20,6 +21,62 @@ def test_small():
     assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)
 
 
+def test_big():
+    # rebuild the small graph
+    # 3 types at 2 businesses each
+    ntypes = 3
+    nbusinesses = 2
+    edges, nodes = random_graph(
+        ntypes=ntypes,
+        nbusinesses=nbusinesses,
+        edge_objectives={"distance"},
+        node_objectives={"rating_diff"},
+    )
+    start_nodes = {0}
+    end_nodes = set(nodes[nodes.type == ntypes - 1].id)
+    soln = cpsat_optimizer.optimize(
+        nodes,
+        edges,
+        start_nodes,
+        end_nodes,
+        edge_objectives={"distance"},
+        node_objectives={"rating_diff"},
+    )
+    print(json.dumps(soln, sort_keys=True, indent=4))
+    assert_solution_valid(edges, soln["edges"], start_nodes, end_nodes)
+
+
+def get_dest_list(ntypes, nbusinesses):
+    target_list = list(range(1, nbusinesses + 1))
+    for i in range(1, ntypes):
+        target_list += (
+            list(range(nbusinesses * i + 1, nbusinesses * i + nbusinesses + 1))
+            * nbusinesses
+        )
+    return target_list
+
+
+def random_graph(ntypes, nbusinesses, edge_objectives=set, node_objectives=set):
+    """ """
+    nodes = pd.DataFrame()
+    nnodes = ntypes * nbusinesses + 1
+    nodes["id"] = range(nnodes)
+    nodes["type"] = ["start"] + sorted(list(range(ntypes)) * nbusinesses)
+    for obj in node_objectives:
+        nodes[obj] = [random.randint(0, 10) for i in range(nnodes)]
+
+    nedges = nbusinesses**2 * (ntypes - 1) + nbusinesses
+    edges = pd.DataFrame()
+    edges["source"] = sorted(
+        list(range(0, (ntypes - 1) * nbusinesses + 1)) * nbusinesses
+    )
+    edges["destination"] = get_dest_list(ntypes, nbusinesses)
+    for obj in edge_objectives:
+        edges[obj] = [random.randint(0, 10) for i in range(nedges)]
+
+    return edges, nodes
+
+
 def assert_solution_valid(edges, soln, start_nodes, end_nodes):
     sources = set([s[0] for s in soln])
     dests = set([s[1] for s in soln])
@@ -37,3 +94,4 @@ def assert_solution_valid(edges, soln, start_nodes, end_nodes):
 
 if __name__ == "__main__":
     test_small()
+    test_big()

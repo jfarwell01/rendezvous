@@ -16,6 +16,8 @@ def optimize(
     node_objectives: set = set(),
 ) -> dict:
     """
+    Optimize for objectives
+    NOTE: all objective values must be integers
     Args:
         nodes: Dataframe of nodes and attributes
         edges: Dataframe of edges, 'source' and 'destination'

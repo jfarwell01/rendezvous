@@ -1,0 +1,22 @@
+Start Time,Run ID,Name,Source Type,Source Name,User,Status,businesses,edges,nodes,stops,objective,time
+2022-11-03 18:54:21,aa8db43b66784fcab7af5e610a271a72,efficient-swan-896,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,80,19280,321,4,1,6.549789819
+2022-11-03 18:52:58,4c858f03101443b182e8bc52f096c0fb,amazing-bug-24,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,80,12880,241,3,1,5.8103069
+2022-11-03 18:52:28,f866ec3e1f184b0487b223bfa3f3b3b9,upbeat-foal-39,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,80,6480,161,2,3,1.853439939
+2022-11-03 18:50:37,bfea258e7f9f4ea78291baf199473186,bedecked-bug-247,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,70,14770,281,4,2,6.116069324
+2022-11-03 18:49:34,cbdfab8a4d99491eb05308c8a09fc28e,capable-squirrel-348,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,70,9870,211,3,1,6.127987314
+2022-11-03 18:49:16,6b6ac7dcb3274c6a818e9ba60afffb9f,unruly-foal-713,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,70,4970,141,2,1,1.561934827
+2022-11-03 18:48:07,cfc6277de63b4abaa3327e0a58789452,clean-toad-967,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,60,10860,241,4,4,4.634785145
+2022-11-03 18:47:25,40399e0d90604652977f47685d1ff81d,dazzling-yak-43,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,60,7260,181,3,1,5.907768106
+2022-11-03 18:47:10,76e325acdb524b1fabce99b944aaf033,respected-bear-333,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,60,3660,121,2,2,1.665215695
+2022-11-03 18:46:23,5159c4a3fec746f59e7a94a16a559816,amazing-bass-264,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,50,7550,201,4,1,5.188961188
+2022-11-03 18:45:57,28f3929fb51848bb94f761f22e1a1b2c,skillful-mole-593,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,50,5050,151,3,1,4.686914531
+2022-11-03 18:45:49,a43c2549ecbb43a98b11694d2226a74e,sedate-skink-722,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,50,2550,101,2,1,1.197437284
+2022-11-03 18:45:27,87067638ed254453bb07eccf425ed538,ambitious-cat-651,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,40,4840,161,4,2,3.425420598
+2022-11-03 18:45:14,a511bb1b566a4c01a76f40c101e0c24a,industrious-sow-182,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,40,3240,121,3,2,3.094761504
+2022-11-03 18:45:10,6bcdc545ec9341bca4d568afb7911575,zealous-cub-395,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,40,1640,81,2,3,0.507905846
+2022-11-03 18:45:00,c70ab162e2c9457681525609128fc892,bustling-owl-726,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,30,2730,121,4,6,2.276600685
+2022-11-03 18:44:55,24f27a6c867847468daaedce794c7a1d,delicate-crane-630,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,30,1830,91,3,1,1.063006347
+2022-11-03 18:44:53,8b5160eb818c48a7a53e6db8a8bb4a03,unequaled-cow-107,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,30,930,61,2,0,0.196693568
+2022-11-03 18:44:50,e9e7a6e1b2b04983a89d1b5a0fa735ee,sneaky-lynx-548,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,20,1220,81,4,4,0.453558228
+2022-11-03 18:44:48,5079fc7bd51a4164a506ac4068d072dd,traveling-duck-944,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,20,820,61,3,9,0.255529168
+2022-11-03 18:44:48,9c8428cbc9954df0a514885ae40f9a83,abundant-koi-413,LOCAL,scripts/performance_optimizer.py,brayps,FINISHED,20,420,41,2,7,0.054941681

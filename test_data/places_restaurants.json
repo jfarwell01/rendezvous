@@ -1,0 +1,1010 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "AcYSjRiA53GwV1Qhjl-DEOPMTC09zrPzoEkRWMT-LcClrE-pR-t0vHzwSU7do4OwrUjA2PZv4AqXXwomaAnYU4UORvM3t4NctImdqV0gS3ECAtKEFyBEMGe_z-YVwNjFRUIe8Ig_jF8Bnt1dH_cm_-rb16Uh2PfeAmuv-8zatHhP1-Hr1y1704BlC0ReBRLDRYUemREsRtIs3MNfblFVdhaOGOYDl63U-qN1d2hRAuNhr92kxUKdxPReB1l5-o4v_IokHX1KVRTHG_AmjevvRnF2vqpBGP-nr0KWfX_qr0H8BnyPCOPeoMJy3NXCBiG6QIyD8J0XDFsdhU6euewOLpPbshdJXRly4vl4VEiE3unVQevQ3vBILLEOmqKdxPiNRzPeI3X2u5twzvaRv3pYu2tkRBytouWbQnqTo2xl7qLQrnfccjt0KOcSnbUREszP",
+   "results" : [
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9179302,
+               "lng" : -77.0316613
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9192231802915,
+                  "lng" : -77.03046156970849
+               },
+               "southwest" : {
+                  "lat" : 38.9165252197085,
+                  "lng" : -77.0331595302915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Busboys and Poets",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3712,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114012912742010868639\"\u003eBusboys and Poets\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRjHY6-zSx8N2_xoJCdERpAmFl9P1SIzVJCFGFPW7Z1Jx6AnTT-_VABLxxmzFYHSMtYlERu93czuWJOmLoYovdpt30ZF48NvIqMWGiT2fuI42qrbubhcQguItx65yRbqIMvf4-tvnNta3if1JiAHkzgJXu5bsGLBkw-YO5GCpEH8VAQQ",
+               "width" : 5568
+            }
+         ],
+         "place_id" : "ChIJ9QBVvOe3t4kRk9O6xcjy8i0",
+         "plus_code" : {
+            "compound_code" : "WX99+58 Washington, DC, USA",
+            "global_code" : "87C4WX99+58"
+         },
+         "price_level" : 2,
+         "rating" : 4.5,
+         "reference" : "ChIJ9QBVvOe3t4kRk9O6xcjy8i0",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 4275,
+         "vicinity" : "2021 14th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.921977,
+               "lng" : -77.042091
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9233091302915,
+                  "lng" : -77.0409195197085
+               },
+               "southwest" : {
+                  "lat" : 38.9206111697085,
+                  "lng" : -77.04361748029152
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/cafe_pinlet",
+         "name" : "Tryst",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1068,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/105837962378098670967\"\u003eTryst\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRgHKzNlNC8dVI00OAvmqh9H5EeQVyTIixGNyiRk41BzcC0DH1oZGUnwXt6FYkjz6C5ScD33GMQRnj1Xt2Ih-wphlArveRiduY60WURbn-ecpo4BoWry77uF__FhTsZEvL-u99iyLVAtMji4iIQxB8-jYUJcxS-bYiNANE1SjrNFUNx1",
+               "width" : 1600
+            }
+         ],
+         "place_id" : "ChIJZ1xnLNq3t4kRMWSzJo7OC6k",
+         "plus_code" : {
+            "compound_code" : "WXC5+Q5 Washington, DC, USA",
+            "global_code" : "87C4WXC5+Q5"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJZ1xnLNq3t4kRMWSzJo7OC6k",
+         "scope" : "GOOGLE",
+         "types" : [
+            "art_gallery",
+            "night_club",
+            "cafe",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 1873,
+         "vicinity" : "2459 18th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9299058,
+               "lng" : -77.02799139999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.93119318029149,
+                  "lng" : -77.02653221970849
+               },
+               "southwest" : {
+                  "lat" : 38.9284952197085,
+                  "lng" : -77.02923018029149
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "The Wonderland Ballroom",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2992,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/102655097981593050303\"\u003eDerek Czarkowski\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRje899HbqxJO67o9C9f9iYpiqh5HlFiNZZMeC7A1tF3DOUNgCT8zwRicvXriNdmTbCh84xSjWQXl04fieoAm57wyXsTjz8O0jsjaVExNVx6NOafScqVKCKCU_hlqZD_QEOSZXmlS6bTbbzzvLpRb3U6mmZaPhGv6TsDRJ_0XuT8gcvR",
+               "width" : 4000
+            }
+         ],
+         "place_id" : "ChIJa3yNoR7It4kRYXMKdbrF-t0",
+         "plus_code" : {
+            "compound_code" : "WXHC+XR Washington, DC, USA",
+            "global_code" : "87C4WXHC+XR"
+         },
+         "price_level" : 1,
+         "rating" : 4.3,
+         "reference" : "ChIJa3yNoR7It4kRYXMKdbrF-t0",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 953,
+         "vicinity" : "1101 Kenyon Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9211625,
+               "lng" : -77.04195530000001
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9224858302915,
+                  "lng" : -77.0407118697085
+               },
+               "southwest" : {
+                  "lat" : 38.9197878697085,
+                  "lng" : -77.04340983029152
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Amsterdam Falafelshop",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4029,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113014343626196831921\"\u003eMischa\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRhPzsoLP9XcXY9O9uYYqeBQ3DY9F76Hhr149hKZYY0TjG2Q9iXd3wQFaeH5RCW-7RLfKs43PDIXc8Q50TtraZ5edZt4kij244xQmAJ10D3Y0uFCqZ7wnKiwsNFJa1ZKxy6M66053QV4sBBfylRYItktaQHJnk2prUMkDJVp0DH5etsE",
+               "width" : 2842
+            }
+         ],
+         "place_id" : "ChIJF4FWytu3t4kRde_ONcyVvME",
+         "plus_code" : {
+            "compound_code" : "WXC5+F6 Washington, DC, USA",
+            "global_code" : "87C4WXC5+F6"
+         },
+         "price_level" : 1,
+         "rating" : 4.5,
+         "reference" : "ChIJF4FWytu3t4kRde_ONcyVvME",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1204,
+         "vicinity" : "2425 18th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9288656,
+               "lng" : -77.03315959999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9301636802915,
+                  "lng" : -77.03180016970848
+               },
+               "southwest" : {
+                  "lat" : 38.9274657197085,
+                  "lng" : -77.0344981302915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Panda Express",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108980284740580063383\"\u003eNils Hünerfürst\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRi3EyaBDjaepPWwO4EOhJ8QjczLdBygeitebewdvyHY3LQqAcX5Htv_fp3X_Pap1ZfOOUQoMN-ppvLB-bsfd8Mhv5Je-BltYSrTvGREMF4hE_OJZogpxP7vByowxMU9IRv_VBlvdEDyzXqgaxoY4CxeSa5w2CT70gjYcZHSfFQjtA1j",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJrVsg1yHIt4kR8lmReDQ5QsM",
+         "plus_code" : {
+            "compound_code" : "WXH8+GP Washington, DC, USA",
+            "global_code" : "87C4WXH8+GP"
+         },
+         "price_level" : 1,
+         "rating" : 4.1,
+         "reference" : "ChIJrVsg1yHIt4kR8lmReDQ5QsM",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 558,
+         "vicinity" : "3100 14th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.921851,
+               "lng" : -77.04204279999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.92316853029149,
+                  "lng" : -77.04086336970849
+               },
+               "southwest" : {
+                  "lat" : 38.9204705697085,
+                  "lng" : -77.0435613302915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "the DINER",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109469601265388869919\"\u003eHarrison Kulik\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRhPqw1waBGC_dkceCNZK5uC10dH12Fp2Qkg6T_2uS-FUBzz8XIx1XTiElcM63wZ9GtdK29ijfJouuXFryG06RDj2dITSxVJO9p5HoOk30Wvd4u034QTCXBmzsYfpiG27LMpbuThoSpo0p7YOyU7xjfARhFJbetwZ4r13LzwSHA7nGAX",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJc7pMLdq3t4kReli_EYrgEkQ",
+         "plus_code" : {
+            "compound_code" : "WXC5+P5 Washington, DC, USA",
+            "global_code" : "87C4WXC5+P5"
+         },
+         "price_level" : 1,
+         "rating" : 4.3,
+         "reference" : "ChIJc7pMLdq3t4kReli_EYrgEkQ",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1813,
+         "vicinity" : "2453 18th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9220894,
+               "lng" : -77.04353829999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9234481802915,
+                  "lng" : -77.0420610197085
+               },
+               "southwest" : {
+                  "lat" : 38.9207502197085,
+                  "lng" : -77.0447589802915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Perry's Restaurant",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4000,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/115989858672538641032\"\u003ePerry&#39;s Restaurant\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRgGih6VDkEbgT0JgyS_RAO6fDGcKAO1dGxVDrn5FsmTFPyPh3tZ7BlwoWsp9KE81hSXceV_1_edrV9BIeSDQdsIUvyoGs9byaXYMtySE4Ihv8mV-Q9lSl7dqbeNAkJpMbJNnfh-s88ecayjtItFvU-ercdzoTox0uT0dxHVzBy21SgC",
+               "width" : 6000
+            }
+         ],
+         "place_id" : "ChIJ4TuUGNq3t4kRcOnPr2VjK-k",
+         "plus_code" : {
+            "compound_code" : "WXC4+RH Washington, DC, USA",
+            "global_code" : "87C4WXC4+RH"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJ4TuUGNq3t4kRcOnPr2VjK-k",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 439,
+         "vicinity" : "1811 Columbia Road Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.93258410000001,
+               "lng" : -77.0282306
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9338878302915,
+                  "lng" : -77.02700386970849
+               },
+               "southwest" : {
+                  "lat" : 38.9311898697085,
+                  "lng" : -77.0297018302915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "The Coupe",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1400,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116745312132814297696\"\u003eThe Coupe\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRg4i7pjHjJv3xewLFrh4gwbmiybU13KORk2dYORiXkngo0CRMR1BGmxyV0sx9Bb23k-zc3Kpe8d2LnWbQWvE5DGy5eAJx9UtWEJ7sJw-CEpKbIfLsGvVid9ckObkFJnQAzdJ4_OpqtJs1Yq1AC5jx1RXqW3y1g7kFo7zRl5qmtL_pPm",
+               "width" : 2100
+            }
+         ],
+         "place_id" : "ChIJ45GEXBnIt4kRoOAe0y91i44",
+         "plus_code" : {
+            "compound_code" : "WXMC+2P Washington, DC, USA",
+            "global_code" : "87C4WXMC+2P"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJ45GEXBnIt4kRoOAe0y91i44",
+         "scope" : "GOOGLE",
+         "types" : [
+            "cafe",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "store",
+            "establishment"
+         ],
+         "user_ratings_total" : 1495,
+         "vicinity" : "3415 11th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.93136999999999,
+               "lng" : -77.03823799999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.93270803029149,
+                  "lng" : -77.0369353697085
+               },
+               "southwest" : {
+                  "lat" : 38.93001006970849,
+                  "lng" : -77.03963333029151
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Angelico Pizzeria",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 792,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116567867559936487566\"\u003eC Morton\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRjZ9ETX3B04OipeQLdzNkEgso2gGqjbdC9t4qZhB_R0LRSr2GIrejE1Z0BT0Tc3Sk6E4WnPFNgTzzagRMgyGoslpEMyo5o1zB0xlts66tyRubxE3yiu8UnadPyRGC4hzXXPPva8I8Rv1jZHHtMa3Lb0xjwNMWDBJE1X7noaOWMaR4Yb",
+               "width" : 490
+            }
+         ],
+         "place_id" : "ChIJe32ARCHIt4kRMW0srmQkCVg",
+         "plus_code" : {
+            "compound_code" : "WXJ6+GP Washington, DC, USA",
+            "global_code" : "87C4WXJ6+GP"
+         },
+         "price_level" : 1,
+         "rating" : 3.8,
+         "reference" : "ChIJe32ARCHIt4kRMW0srmQkCVg",
+         "scope" : "GOOGLE",
+         "types" : [
+            "meal_delivery",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 112,
+         "vicinity" : "3205 Mount Pleasant Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9221048,
+               "lng" : -77.04356109999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9234094802915,
+                  "lng" : -77.04208931970848
+               },
+               "southwest" : {
+                  "lat" : 38.92071151970851,
+                  "lng" : -77.0447872802915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Mintwood Place",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 3840,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108065955356604344330\"\u003eNicholas Gazel\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRhGcC2V2GKcoEam0NXB6VPemkgY0_QvoOXNooGtg1a46Z2RAUkYZIY1h7neG3dUr-hWlXzcfM8cZgtX2uXoEo0FeqxO9CJ6TgdxJjj64n1FeAbTXo92aEfFlh2AT2SptneqvrebKDhQnhrIJ6f8uCWnMUrCTK6XXBLX7yw5UF2RemLy",
+               "width" : 2160
+            }
+         ],
+         "place_id" : "ChIJs_BBItq3t4kRXxvpMEgZmpc",
+         "plus_code" : {
+            "compound_code" : "WXC4+RH Washington, DC, USA",
+            "global_code" : "87C4WXC4+RH"
+         },
+         "price_level" : 3,
+         "rating" : 4.4,
+         "reference" : "ChIJs_BBItq3t4kRXxvpMEgZmpc",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 554,
+         "vicinity" : "1813 Columbia Road Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9173987,
+               "lng" : -77.0413058
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9187513802915,
+                  "lng" : -77.04012891970849
+               },
+               "southwest" : {
+                  "lat" : 38.9160534197085,
+                  "lng" : -77.0428268802915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+         "name" : "Jack Rose Dining Saloon",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 640,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/101936597957369530801\"\u003eJack Rose Dining Saloon\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRh8z-u4GOld7q12bk9aV1EvexsrbA3bUFMLB-SY9TRlvVThKrhapLcZpkofJtY3moSZOstGhF6loU_32f4Y1p9bf2raXzNWJgSdVdD5zOhjywmayTfPy1y5Sn_LYIwnjwwSK1wXflaCGqqp4LS35T9_4chJRVz2jM8KnEDIXCu39dlu",
+               "width" : 960
+            }
+         ],
+         "place_id" : "ChIJK7e4Ldu3t4kRUg8DvM7SaSQ",
+         "plus_code" : {
+            "compound_code" : "WX85+XF Washington, DC, USA",
+            "global_code" : "87C4WX85+XF"
+         },
+         "price_level" : 3,
+         "rating" : 4.6,
+         "reference" : "ChIJK7e4Ldu3t4kRUg8DvM7SaSQ",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 1893,
+         "vicinity" : "2007 18th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "CLOSED_TEMPORARILY",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9215402,
+               "lng" : -77.042678
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9229467302915,
+                  "lng" : -77.0411583197085
+               },
+               "southwest" : {
+                  "lat" : 38.9202487697085,
+                  "lng" : -77.04385628029151
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Mellow Mushroom Washington DC - Adams Morgan",
+         "permanently_closed" : true,
+         "photos" : [
+            {
+               "height" : 4893,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/111569583711910202473\"\u003eMellow Mushroom Washington DC - Adams Morgan\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRiN1oGAfql7OuOUHYLMHTApNE7TWOmqXQNTjHOJeayCfXWy92tPTr4YzosLvTa7zmGEbs1IQqt776xOR22zz7C9bmSIpsVNRohQRh7MjW-Vh_boPnPuDVO9I-rno2sbVpITl_ZVpZb-L1Qs7utRgg6uhwcmRe0Y9I2RdAP6hfvN62C9",
+               "width" : 7331
+            }
+         ],
+         "place_id" : "ChIJ3WcOMdq3t4kRgXJ-kR7Kh5M",
+         "plus_code" : {
+            "compound_code" : "WXC4+JW Washington, DC, USA",
+            "global_code" : "87C4WXC4+JW"
+         },
+         "price_level" : 2,
+         "rating" : 4.4,
+         "reference" : "ChIJ3WcOMdq3t4kRgXJ-kR7Kh5M",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 677,
+         "vicinity" : "2436 18th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9310956,
+               "lng" : -77.0278029
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.93241723029149,
+                  "lng" : -77.02658856970849
+               },
+               "southwest" : {
+                  "lat" : 38.9297192697085,
+                  "lng" : -77.02928653029151
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "El Chucho - Cocina Superior",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 747,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113088198807883018259\"\u003eEl Chucho - Cocina Superior\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRidTQUnw2CXWTCm3mfa0akMp_uMks_mfjXmcoQRGNZPEerCfpGbtl6EocoqIm8Q2Xk2Z4GvpnJ0Pu8GZMeIxgMjekxS5CPVqhmMrkWmT_MKGINKJFLhJ9mb_stv8Du3t1Uh-Bco4gIlhI6FrlYiP92qVGe8YJsuGlJ1UiZjZ2e5166V",
+               "width" : 750
+            }
+         ],
+         "place_id" : "ChIJCbDEVBnIt4kROxX5osDfulw",
+         "plus_code" : {
+            "compound_code" : "WXJC+CV Washington, DC, USA",
+            "global_code" : "87C4WXJC+CV"
+         },
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "ChIJCbDEVBnIt4kROxX5osDfulw",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 931,
+         "vicinity" : "3313 11th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.917207,
+               "lng" : -77.0317144
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.91852378029149,
+                  "lng" : -77.03049011970849
+               },
+               "southwest" : {
+                  "lat" : 38.91582581970849,
+                  "lng" : -77.03318808029151
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Lost Society",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1201,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/109085907184509018828\"\u003eLost Society\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRjxoANipkZH8H9GfoHlXI_E0fz3W3AqWhKlaReMqeTYRuDfHH9V5EuPkhRNKQ485vIJg1iaH16wrFtvPhXzmqYeiM5FM2f4nUwj_lqwj6VPmlIicMbE8gQktorM6iwLsf4J2cDnEzSD4gSKYGAMfwazqA9HbniQcayMncSKZ519QqZp",
+               "width" : 1800
+            }
+         ],
+         "place_id" : "ChIJEzEox-e3t4kRDrV0mSXbyqU",
+         "plus_code" : {
+            "compound_code" : "WX89+V8 Washington, DC, USA",
+            "global_code" : "87C4WX89+V8"
+         },
+         "price_level" : 2,
+         "rating" : 4,
+         "reference" : "ChIJEzEox-e3t4kRDrV0mSXbyqU",
+         "scope" : "GOOGLE",
+         "types" : [
+            "restaurant",
+            "night_club",
+            "bar",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 585,
+         "vicinity" : "2001 14th Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9206321,
+               "lng" : -77.02730699999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9220435802915,
+                  "lng" : -77.02587281970848
+               },
+               "southwest" : {
+                  "lat" : 38.9193456197085,
+                  "lng" : -77.0285707802915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Florida Avenue Grill",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/108852882530236643169\"\u003eM Miller\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRi76sxZ78fjl88Kx4pG01C8-w0-UXfV-8Wq9h4WXY2h2-c_FqKnOgrzYSLxZPi81pwEapQIhy6A6wSTIGlnriA-2dwp4FAIz1yxL1H_K3aeVpy5GhWJmaT6xCpU8rDjahP07uIRPnX__yzkBTe3dlQ_6RRdsHtegVjWBGHsx80YJd3f",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJbdDrAOS3t4kR1-XG-VOVhl0",
+         "plus_code" : {
+            "compound_code" : "WXCF+73 Washington, DC, USA",
+            "global_code" : "87C4WXCF+73"
+         },
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "ChIJbdDrAOS3t4kR1-XG-VOVhl0",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 906,
+         "vicinity" : "1100 Florida Avenue Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.91721889999999,
+               "lng" : -77.02876289999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9184992802915,
+                  "lng" : -77.02745866970848
+               },
+               "southwest" : {
+                  "lat" : 38.9158013197085,
+                  "lng" : -77.03015663029149
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Ben's Chili Bowl",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 1406,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/113687129184546693376\"\u003eBen&#39;s Chili Bowl\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRh8uwpbjZ3oPn7pbUnyZozBCED5N2KnotTxDOLCu5xW-ueNKzYq8QMyQKvcUeS4OEbVXl3KkpzElpye6-Nu1r6g-W9cBISrcJeY8yC2b9Q4mt3yyiWV4ApMFlrljdo5Sxpd7y3tThAfDH-EVCyuc7-3Xo_fgTET3it8qof0YAP1VTde",
+               "width" : 2500
+            }
+         ],
+         "place_id" : "ChIJM_l-a-a3t4kRQa_lW1A7W8k",
+         "plus_code" : {
+            "compound_code" : "WX8C+VF Washington, DC, USA",
+            "global_code" : "87C4WX8C+VF"
+         },
+         "price_level" : 1,
+         "rating" : 4.4,
+         "reference" : "ChIJM_l-a-a3t4kRQa_lW1A7W8k",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 5570,
+         "vicinity" : "1213 U Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.92347099999999,
+               "lng" : -77.046756
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9247102302915,
+                  "lng" : -77.04540276970849
+               },
+               "southwest" : {
+                  "lat" : 38.9220122697085,
+                  "lng" : -77.04810073029149
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Mama Ayesha's Restaurant",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 2995,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/114168600700996622195\"\u003eKevin Markman\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRgF_5f999bpl7DgqSXHsV-_KcegZlmihOxk2jlXZmo3z-KXGrx5RUtylydxRC4DMqiI0y-BsvsDmcw5kqAQMYYdtzdibrIfOoOJ4j7V5YnSdoD4FPHSNUaNdFsfCXQQJ4__URQUcWpZrHqqjo8WcAzV1fkH-orBHb9OeIwG7LXw3M4R",
+               "width" : 4608
+            }
+         ],
+         "place_id" : "ChIJu4TRMNe3t4kREbzZ51_gGV8",
+         "plus_code" : {
+            "compound_code" : "WXF3+97 Washington, DC, USA",
+            "global_code" : "87C4WXF3+97"
+         },
+         "price_level" : 2,
+         "rating" : 4.3,
+         "reference" : "ChIJu4TRMNe3t4kREbzZ51_gGV8",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 463,
+         "vicinity" : "1967 Calvert Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9167961,
+               "lng" : -77.0412156
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.91825083029149,
+                  "lng" : -77.03986606970849
+               },
+               "southwest" : {
+                  "lat" : 38.9155528697085,
+                  "lng" : -77.0425640302915
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Duccini's Pizza",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106470925972034892242\"\u003eSeung Jun Shin (4가족의 평범한 일상)\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRi96MiEFATgBN38xCjU6C3gwpzUJ2lzpl-PvI1erUPYauNpcfbCMQStR8YRsJ2iU4Rugqvdu4erRin9rGcvqDcSRdhhXWZlDfUcs_Q2QBswNKEK9zp8YLXjiXM0WfvgilLcSYzgbQ4xVN-FUYfkljcYsN4eF9rCaVlSY6ju51muJcdd",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJMd7HzcS3t4kRRLVgMCiGa8A",
+         "plus_code" : {
+            "compound_code" : "WX85+PG Washington, DC, USA",
+            "global_code" : "87C4WX85+PG"
+         },
+         "price_level" : 1,
+         "rating" : 4.3,
+         "reference" : "ChIJMd7HzcS3t4kRRLVgMCiGa8A",
+         "scope" : "GOOGLE",
+         "types" : [
+            "restaurant",
+            "meal_delivery",
+            "meal_takeaway",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 733,
+         "vicinity" : "1778 U Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9172944,
+               "lng" : -77.0305704
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9184993302915,
+                  "lng" : -77.02890861970849
+               },
+               "southwest" : {
+                  "lat" : 38.9158013697085,
+                  "lng" : -77.03160658029149
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Alero Restaurant",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 3492,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/106943133760007552149\"\u003egrace k\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRh8fZ4jvAwVJpMm5vFoWFndX0LFQvnbgE_OMFoaO1PJIhfBLbAX2DA0qqBftHuKYNHl184vtYBx-o1HZGo0jqd7bE1ZJTRwBO8TXpL18M0WyAO9fUXSqXpbVFoItaNKs9mRz_SYvuqrEF9XyIuM5syFYpvBfDPDcEztUXNyLrUiqlG8",
+               "width" : 4656
+            }
+         ],
+         "place_id" : "ChIJTZfCSua3t4kRj8MZTLRVHQs",
+         "plus_code" : {
+            "compound_code" : "WX89+WQ Washington, DC, USA",
+            "global_code" : "87C4WX89+WQ"
+         },
+         "price_level" : 2,
+         "rating" : 4,
+         "reference" : "ChIJTZfCSua3t4kRj8MZTLRVHQs",
+         "scope" : "GOOGLE",
+         "types" : [
+            "night_club",
+            "bar",
+            "restaurant",
+            "food",
+            "point_of_interest",
+            "establishment"
+         ],
+         "user_ratings_total" : 1165,
+         "vicinity" : "1301 U Street Northwest, Washington"
+      },
+      {
+         "business_status" : "OPERATIONAL",
+         "geometry" : {
+            "location" : {
+               "lat" : 38.9198456,
+               "lng" : -77.04132779999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 38.9211529302915,
+                  "lng" : -77.0401637697085
+               },
+               "southwest" : {
+                  "lat" : 38.9184549697085,
+                  "lng" : -77.04286173029151
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+         "icon_background_color" : "#FF9E67",
+         "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+         "name" : "Muzette",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 4032,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117049653350026820907\"\u003e홍찬표\u003c/a\u003e"
+               ],
+               "photo_reference" : "AcYSjRjE-u4c9dEoA8tVgaXBPAFu3x667Z4nKqoEoPWcH3wjA2QVElBeZV9CHsaXGsq_QDbac54DY9Zvdtklv3R6L92smal2ppQ2irS6_kI0SIQtEksvXPkRrLiIF1af4SCotKo7VuKGcooUyWCJEW3IobncMbFKG49G_vg7Cwi7-0hoDdCA",
+               "width" : 3024
+            }
+         ],
+         "place_id" : "ChIJixuxqdu3t4kRJnOkEL7vFo0",
+         "plus_code" : {
+            "compound_code" : "WX95+WF Washington, DC, USA",
+            "global_code" : "87C4WX95+WF"
+         },
+         "price_level" : 2,
+         "rating" : 3.9,
+         "reference" : "ChIJixuxqdu3t4kRJnOkEL7vFo0",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+         "user_ratings_total" : 263,
+         "vicinity" : "2305 18th Street Northwest, Washington"
+      }
+   ],
+   "status" : "OK"
+}
